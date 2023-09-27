@@ -39,10 +39,14 @@ a {
 }
 
 
+
+
 .head1 img {
     width: 150px;
     height: 80px;
 }
+
+
 
 .headr {
     width: 250px;
@@ -53,12 +57,16 @@ a {
 }
 
 
+
+
 .headr select {
     color: white;
     width: 75px;
     height: 35px;
     background-color: rgba(0, 0, 0, 0.349);
 }
+
+
 
 
 .headr .signup {
@@ -75,10 +83,14 @@ a {
 }
 
 
+
+
 .headr .signup :hover {
     background-color: rgb(204, 35, 35);
 
 }
+
+
 
 /* body intro */
 
@@ -98,10 +110,14 @@ a {
 }
 
 
+
+
 .intro .cntnt1 {
     width: 90%;
 
 }
+
+
 
 
 .intro .cntnt1 h1 {
@@ -111,11 +127,15 @@ a {
 
 }
 
+
+
 .intro .cntnt1 p {
     font-size: 1.5rem;
     color: white;
     margin-top: 20px;
 }
+
+
 
 .input_search input {
     width: 300px;
@@ -125,6 +145,8 @@ a {
     margin-top: 20px;
     font-size: larger;
 }
+
+
 
 .input_search input:-webkit-autofill,
 .input_search input:-webkit-autofill:hover,
@@ -136,6 +158,8 @@ a {
     box-shadow: inset 0 0 20px 20px #23232329;
 }
 
+
+
 .input_search button {
     width: 150px;
     height: 50px;
@@ -144,6 +168,18 @@ a {
     font-size: large;
     color: white;
 }
+
+
+
+.input_search button:hover {
+   
+    background-color: red;
+    
+}
+
+
+
+
 
 /* Section 2 */
 
@@ -158,6 +194,8 @@ a {
 
 }
 
+
+
 .sec2_main {
     width: 80%;
 
@@ -171,6 +209,9 @@ a {
 
 }
 
+
+
+
 .sec2_main_side1 {
     width: 700px;
     height: 100%;
@@ -179,15 +220,17 @@ a {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-
-
-
+    margin-top: 30px;
 }
+
+
 
 .sec2_main_side1 h1 {
     font-size: 3rem;
     font-weight: 900;
 }
+
+
 
 .sec2_main_side1 p {
     margin-top: 20px;
@@ -195,15 +238,22 @@ a {
     font-weight: 400;
 }
 
+
+
 .sec2_main_side2 {
     width: 700px;
     height: 100%;
+   
 }
+
+
 
 .sec2_main_side2 img {
     width: 100%;
     height: 100%;
 }
+
+
 
 /* section3 */
 
@@ -218,6 +268,8 @@ a {
 
 }
 
+
+
 /* section 6 */
 
 .sec6 {
@@ -229,6 +281,9 @@ a {
 
 }
 
+
+
+
 .sec6_freq {
     width: 80%;
     text-align: center;
@@ -237,15 +292,24 @@ a {
 
 }
 
+
+
 .sec6 h1 {
     margin-top: 30px;
     font-size: 3rem;
 }
 
+
+
 .sec6 p,
 label {
-    font-size: 1.25rem;
+    font-size: 1.8rem;
+   line-height: 50px;
 }
+
+
+
+
 
 /* accordtion */
 
@@ -253,21 +317,27 @@ label {
     display: none;
 }
 
+
+
 #myaccordion label {
     text-align: start;
     display: block;
     padding: 8px 22px;
     margin: 20px 0px 1px 0px;
     cursor: pointer;
-    background: rgba(128, 128, 128, 0.603);
+    background: rgba(128, 128, 128, 0.329);
     color: #FFF;
     transition: ease .5s;
     height: 50px;
 }
 
+
+
 #myaccordion label:hover {
-    background: rgba(175, 170, 170, 0.603);
+    background: rgba(175, 170, 170, 0.301);
 }
+
+
 
 .content {
     color: white;
@@ -277,6 +347,8 @@ label {
     margin: -1 0 0 0;
 }
 
+
+
 #myaccordion input:checked+label+.content {
     display: block;
     -webkit-animation: fadeIn 0.5s ease-out;
@@ -284,6 +356,8 @@ label {
     -o-animation: fadeIn 0.5s ease-out;
     animation: fadeIn 0.5s ease-out;
 }
+
+
 
 
 @-webkit-keyframes fadeIn {
@@ -303,6 +377,10 @@ label {
     }
 }
 
+
+
+
+
 /* section 7 */
 
 .sec7 {
@@ -317,6 +395,8 @@ label {
 }
 
 
+
+
 /* footer */
 
 .footer {
@@ -327,18 +407,26 @@ label {
     display: flex;
     border-top: 10px rgb(90, 86, 86) solid;
     justify-content: center;
+    
 }
 
+
+
 .footer_inner {
+    margin-top: 50px;
     width: 80%;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
     color: white;
 
 
 }
+
+
+
 
 .footer_c1 {
     display: flex;
@@ -349,6 +437,8 @@ label {
 
 
 }
+
+
 
 .footer_c1 a {
     color: whitesmoke;
@@ -391,6 +481,8 @@ label {
 
 
 }
+
+
 
 @media (max-width: 600px) {
     .intro .cntnt1 h1 {
@@ -437,6 +529,7 @@ label {
 
 
 }
+
 
 
 
