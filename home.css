@@ -415,7 +415,7 @@ label {
 .footer_inner {
     margin-top: 50px;
     width: 80%;
-    /* height: 100%; */
+    height: auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -581,6 +581,9 @@ label {
     }
 
     .footer {
+        height: auto;
+    }
+    .footer_c1{
         height: auto;
     }
 
