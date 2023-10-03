@@ -11,3 +11,5 @@
 // Code of the program & screenshot of the output.
 // 16. Write a program to check whether a given
 
+// Function to get array values from the user
+
