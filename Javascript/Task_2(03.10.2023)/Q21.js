@@ -38,7 +38,7 @@ console.log(a);
  
 b=[]
 
-for (let i = 0; i < a.length - 1; i++) {
+for (let i = 0; i < a.length -1; i++) {
     const sum = a[i] * a[i + 1];
     b.push(sum)
     
