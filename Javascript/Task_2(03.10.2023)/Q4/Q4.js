@@ -5,8 +5,9 @@
 
 
 
-const prompt = require("prompt-sync")()
-s1=prompt("enter mark:")
+
+s1=parseInt(prompt("enter mark:"))
+
 function passorfail(Mark){
     if(Mark<50){
         console.log("Fail");

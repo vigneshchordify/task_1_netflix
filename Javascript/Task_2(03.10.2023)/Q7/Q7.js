@@ -16,11 +16,11 @@
 // 9 x 5 = 45
 // 10 x 5 = 50
 
-
+s1=parseInt(prompt("enter the number for multiplication table"))
 function multiply(num){
     for(i=1;i<=10;i++){
         console.log(`${i} X ${num} = ${i*num}`);
     }
 }
 
-multiply(5)
+multiply(s1)

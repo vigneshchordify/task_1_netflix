@@ -6,10 +6,11 @@
 // Input: 10
 // Output: Sum of odd numbers = 25
 
-const prompt = require("prompt-sync")()
 
 
-s1=prompt("enter Limit")
+
+
+s1=parseInt(prompt("enter Limit to find sum of odd numbers"))
    
 
 

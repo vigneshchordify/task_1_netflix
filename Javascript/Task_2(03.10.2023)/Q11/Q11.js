@@ -8,17 +8,35 @@
 // Output: Number of even numbers in the given array is 3
 // Code of the program & screenshot of the output.
 
+array1=[]
+length=parseInt(prompt("enter length of array"))
 
-function evenfind(array1){
-    sum=0
-    for(i of array1){
-        
+
+
+function add(length){
+    for(i=1;i<=length;i++){
+    
+        value=parseInt(prompt("enter number"))
+        array1.push(Number(value))
        
-        if(i%2==0){
-            sum++
-        }
+    
     }
-    console.log(sum);
+    evenfind(array1)
+    function evenfind(array1){
+        sum=0
+        for(i of array1){
+            
+           
+            if(i%2==0){
+                sum++
+            }
+        }
+        alert(sum);
+    }
+
 }
 
-evenfind([10,12,34,1,2,3,5])
+add(length)
+
+
+

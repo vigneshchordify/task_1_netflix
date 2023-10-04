@@ -1,8 +1,6 @@
 //2. Accept two inputs from the user and output their sum.
 
 
-s1=prompt("enter num 1:")
-s2=prompt("enter num 2:")
 
 
 function sum(){

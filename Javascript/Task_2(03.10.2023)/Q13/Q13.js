@@ -9,7 +9,7 @@
 // Output: Entered string is not a palindrome
 // Code of the program & screenshot of the output.
 
-const prompt = require("prompt-sync")()
+
 n=prompt("enter string")
 
 function palindrome(string) {
@@ -19,11 +19,11 @@ function palindrome(string) {
     for (i = 1; i <= length / 2; i++) {
 
         if (string[i] !== string[length - i-1]) {
-           return console.log("not palindrome");
+           return alert("not palindrome");
         }
 
     }
-   return console.log("palindrome");
+   return alert("palindrome");
 }
 
 palindrome(n);

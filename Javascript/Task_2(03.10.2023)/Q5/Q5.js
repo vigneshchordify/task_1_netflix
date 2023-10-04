@@ -16,8 +16,8 @@
 // Failed
 
 
-const prompt = require("prompt-sync")()
-s1=prompt("enter mark:")
+s1=parseInt(prompt("enter mark:"))
+
 
 function markgrade(mark){
     if(mark<50){

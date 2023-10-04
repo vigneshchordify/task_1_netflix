@@ -21,7 +21,7 @@
 
 
 
-const prompt = require("prompt-sync")()
+
 s1= parseInt(prompt("enter number:"))
 function day(num){
 

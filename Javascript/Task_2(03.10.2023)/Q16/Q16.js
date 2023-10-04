@@ -8,7 +8,8 @@
 
 const prompt = require("prompt-sync")()
 
-number=prompt("enter number")
+
+number=parseInt(prompt("enter number"))
 function prime(number){
 
 

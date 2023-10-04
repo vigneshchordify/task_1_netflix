@@ -12,14 +12,14 @@
 // Simple Interest (SI)
 // Float
 
-const prompt = require("prompt-sync")()
-s1=prompt("enter num 1:")
-s2=prompt("enter num 2:")
-s3=prompt("enter num 3:")
+
+s1= parseInt(prompt("enter num 1:") )
+s2=parseInt(prompt("enter num 2:") )
+s3=parseInt(prompt("enter num 3:") )
 
 function simpleinterest(P,R,N){
    
-    console.log(((P*R*N)/100));
+    console.log(("simple interest is"+(P*R*N)/100));
 }
 
 

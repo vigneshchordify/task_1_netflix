@@ -5,8 +5,9 @@
 // 1234
 // 12345
 
+s1=parseInt(prompt("set limit for patern"))
 
-for(i=0;i<=5;i++){
+for(i=0;i<=s1;i++){
 sum=''
     for(j=0;j<=i;j++){
         sum+=j
