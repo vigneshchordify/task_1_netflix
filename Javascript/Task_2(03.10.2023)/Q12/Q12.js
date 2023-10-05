@@ -34,11 +34,15 @@ function arraysort(input) {
     for (i = 0; i < l; i++) {
 
         for (j = 0; j < l-1 ; j++) {
-            if (input[j] > input[j + 1]) {
+            if (input[j] < input[j + 1]) {
 
-                let temp = input[j + 1]
-                input[j + 1] = input[j]
-                input[j] = temp
+
+
+                [input[j],input[j+1]]=[input[j+1],input[j]]
+
+                // let temp = input[j + 1]
+                // input[j + 1] = input[j]
+                // input[j] = temp
             }
 
         }
