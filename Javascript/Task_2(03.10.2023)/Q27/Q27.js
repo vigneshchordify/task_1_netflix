@@ -21,9 +21,9 @@
 // Sample Output 3
 // 8
 
-const prompt = require("prompt-sync")()
 
-var my_height = prompt("Enter your height:");
+
+var my_height =parseInt( prompt("Enter your height:"))
 
 try {
     if (isNaN(my_height)) {
@@ -33,8 +33,8 @@ try {
     } else if (my_height < 1) {
         throw new Error("TinyHeightError");
     } else {
-        console.log(my_height);
+        alert(my_height);
     }
 } catch (error) {
-    console.log(error.message);
+    alert(error.message);
 }

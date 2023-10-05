@@ -12,7 +12,7 @@ try{
 }
 catch(error){
 
-console.log(`error is ${error}`);
+alert(`error is ${error}`);
 }
 
-console.log(`The string Type is ${typeof(my_string)}`);
+alert(`The string Type is ${typeof(my_string)}`);

@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-    $('button').on('click',function(){
+    $('#b1').on('click',function(){
 
-        $("<span>this is end</span>").appendTo('p')
+        $("<span>this is end</span>").appendTo('#p1')
 
     })
 

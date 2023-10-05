@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('button').on('click',function(){
-        $('<p>comes first</p>').insertBefore('p')
+    $('#b1').on('click',function(){
+        $('<p>comes first</p>').insertBefore('#p1')
     })
 })

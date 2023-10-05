@@ -8,9 +8,45 @@
 // 50, 40, 30, 20, 10
 // Code of the program & screenshot of the output.
 
-function arraysort(input){
-    console.log(input.sort((n1,n2)=>n1<n2));
+
+n = prompt('array length')
+
+function add(n) {
+    b = []
+    for (i = 0; i < n; i++) {
+        c = parseInt(prompt("enter values of array"))
+
+        b.push(c)
+
+    }
+    
+arraysort(b)
 }
 
 
-arraysort([1,4,2,3])
+
+
+
+function arraysort(input) {
+
+    l = input.length
+
+    for (i = 0; i < l; i++) {
+
+        for (j = 0; j < l-1 ; j++) {
+            if (input[j] > input[j + 1]) {
+
+                let temp = input[j + 1]
+                input[j + 1] = input[j]
+                input[j] = temp
+            }
+
+        }
+    }
+    console.log(input);
+
+}
+
+add(n)
+
+

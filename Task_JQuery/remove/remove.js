@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    $('button').on('click',function(){
+    $('#b1').on('click',function(){
 
-        $('div').remove()
+        $('#d1').remove()
     })
 })

@@ -20,9 +20,8 @@
 // 500000
 // Income tax amount = 25000.00
 
-const prompt = require("prompt-sync")()
+a=parseInt(prompt("Enter Annual income"))
 
-a=prompt("Enter Annual income")
 
 
 function tax(income){
@@ -30,18 +29,21 @@ function tax(income){
 
      if(income<100000){
         taxpay="no tax"
+        return console.log("You have to pay RS:"+taxpay+" as tax amount");
         
-        return console.log(taxpay);
+       
         
     }
     else if(income<500000){
         taxpay=income*.05
-        return console.log(taxpay);
+        return console.log("You have to pay RS:"+taxpay+" as tax amount");
+       
         
     }
     else if(income<1000000){
         taxpay=income*.2
-        return console.log(taxpay);
+        return console.log("You have to pay RS:"+taxpay+" as tax amount");
+      
         
     }
     
@@ -49,7 +51,7 @@ function tax(income){
 
 else if(income<5000000){
     taxpay=income*.3
-    return console.log(taxpay);
+    return console.log("You have to pay RS:"+taxpay+" as tax amount");
 }
 
 

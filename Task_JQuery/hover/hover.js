@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $('p').hover(function(){
+    $('#p1').hover(function(){
 
         $(this).css({'background-color':'green'})
     })

@@ -42,16 +42,30 @@ var library = [
         }
         ];
 
-        
-        library.map(i=>{
-                if(i.readingStatus){
-                        console.log(`Already Read ${i.title} by ${i.author}`);
+        l=library.length
+        console.log(l);
+
+        for(i=0;i<l;i++){
+                         if(library[i].readingStatus){
+                        alert(`Already Read ${library[i].title} by ${library[i].author}`);
                 }
                 else{
-                        console.log(`You still need to read ${i.title} by ${i.author}`);
+                        alert(`You still need to read ${library[i].title} by ${library[i].author}`);
 
                 }
-        })
+               
+        }
+        
+        
+        // library.map(i=>{
+        //         if(i.readingStatus){
+        //                 console.log(`Already Read ${i.title} by ${i.author}`);
+        //         }
+        //         else{
+        //                 console.log(`You still need to read ${i.title} by ${i.author}`);
+
+        //         }
+        // })
 
         
 

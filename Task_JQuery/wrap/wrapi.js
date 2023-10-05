@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $("button").click(function(){
-        $("p").wrap("<div></div>");
+    $("#b1").click(function(){
+        $("#p1").wrap("<div></div>");
       });
 })

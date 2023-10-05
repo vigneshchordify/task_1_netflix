@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('p').bind("mouseover",function(){
+    $('.p1').bind("mouseover",function(){
         alert("you hovered ")
     })
 })

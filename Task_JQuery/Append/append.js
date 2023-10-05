@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-    $('button').on("click", function () {
+    $('#b1').on("click", function () {
 
         
         $('ol').append('<li>another<li>')

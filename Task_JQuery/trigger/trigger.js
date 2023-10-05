@@ -2,7 +2,7 @@
 
 $(document).ready(()=>{
 
-    $("button").click(()=>{
+    $("button").on("click",function(){
 
        alert("page reloaded or clicked the button")
 

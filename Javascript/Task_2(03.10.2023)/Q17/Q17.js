@@ -7,11 +7,12 @@
 // Code of the program & screenshot of the output.
 
 
-const prompt = require("prompt-sync")()
 
-s1 = prompt("Enter number 1:");
-s2 = prompt("Enter number 1:");
-s3=prompt("condition:")
+
+s1=parseInt(prompt("Enter number 1:"))
+s2=parseInt(prompt("Enter number 1:"))
+s3=(prompt("condition: should be +,-,* or /"))
+
 
 class mathoperations{
 
@@ -51,7 +52,7 @@ class mathoperations{
 
 }
 
-const operations=new mathoperations()
+const operations= new mathoperations()
 
  
 

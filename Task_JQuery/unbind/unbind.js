@@ -4,12 +4,12 @@
 $(document).ready(function(){
 
 
-    $("p").on("click",function(){
+    $(".p1").on("click",function(){
         $(this).css({"color":"red"})
     });
 
-    $('button').on('click',function(){
-        $('p').unbind()
+    $('#b1').on('click',function(){
+        $('.p1').unbind()
     })
 
 })

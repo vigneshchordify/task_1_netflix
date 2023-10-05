@@ -2,9 +2,9 @@
 
 $(document).ready(function(){
 
-    $("button").on('click',function(){
+    $("#b1").on('click',function(){
 
-        $("p").toggle()
+        $("#p1").toggle()
     })
 
 })

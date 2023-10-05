@@ -17,11 +17,11 @@
 
 
 
-const prompt = require("prompt-sync")()
+a=parseInt(prompt("Enter Written Test mark"))
 
-a=prompt("Written Test")
-b=prompt("Lab Exam")
-c=prompt("Assignment")
+
+b=parseInt(prompt("Enter Lab Exam mark"))
+c=parseInt(prompt("Enter Assignment mark"))
 
 function grade(WrittenTest,labExam,Assignment){
 

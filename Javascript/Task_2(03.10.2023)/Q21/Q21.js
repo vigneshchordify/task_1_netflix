@@ -21,11 +21,10 @@
 
 
 
-const prompt = require("prompt-sync")()
 
 
 a=[]
-length=prompt("enter length of array")
+length=prompt("enter length of array to get sum of adjacent value")
 for(i=1;i<=length;i++){
     value=prompt("enter number")
     a.push(Number(value))
@@ -33,6 +32,7 @@ for(i=1;i<=length;i++){
 
 }
 console.log(a);
+alert("your given array"+a)
 
  
  
@@ -44,3 +44,4 @@ for (let i = 0; i < a.length -1; i++) {
     
 }
 console.log(b);
+alert("the sum of array "+b)
