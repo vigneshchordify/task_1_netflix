@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./form.js"></script>
+    <link rel="stylesheet" href="./form.css">
+
+
+
+</head>
+
+<body>
+
+    <h1>fill the form</h1>
+
+
+    <form class="mainform" onsubmit="return myFunction()">
+        <div>
+            <label >name</label><br>
+            <input name="nam" id="nme" type="text" required >
+        </div>
+        <div>
+            <label >phone number</label><br>
+            <input id="phn" type="number" name="phone" required>
+        </div>
+        <div>
+            <label >Email</label><br>
+            <input name="email" id="eml" type="email" required>
+        </div>
+
+        <button id="btn" type="submit">Submit</button>
+
+
+    </form>
+
+    <div class="maintable">
+        <div class="tableform">
+            <table>
+                <tr>
+                    <th>SI no</th>
+                    <th>Name</th>
+                    <th>Phone number</th>
+                    <th>Email</th>
+                    <th>Delete</th>
+                </tr>
+                <tr>
+                    <td id=""></td>
+                    <td id="name1"></td>
+                    <td id="phone1"></td>
+                    <td id="email1"></td>
+                    <td ></td>
+                </tr>
+          
+            </table>
+
+          
+
+        </div>
+    </div>
+
+</body>
+
+</html>

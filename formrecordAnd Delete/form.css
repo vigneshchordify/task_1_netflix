@@ -1,0 +1,34 @@
+
+.mainform{
+    display: flex;
+    justify-content: space-evenly;
+}
+.mainform input{
+    width: 300px;
+    
+    
+}
+.maintable{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.tableform{
+    width: 80%;
+   
+    height: 80vh;
+    
+}
+.tableform table{
+    width: 100%;
+  text-align: center;
+  border: 1px solid black;
+   
+    
+}
+
+.tableform table th,td{
+   
+   border: 1px solid black;
+    
+}
