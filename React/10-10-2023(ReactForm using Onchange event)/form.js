@@ -16,6 +16,8 @@ function Welcome() {
     console.log("Date Of Birth: "+dob);
     console.log("Mail: "+mail);
     console.log("Phone Number: "+num);
+
+
    
 
     function handleSubmit(e) {
@@ -23,12 +25,7 @@ function Welcome() {
 
 
 
-        setFname(document.getElementById('fname').value)
-        setLname(document.getElementById('lname').value)
-        setAge(document.getElementById('age').value)
-        setDob(document.getElementById('dob').value)
-        setMail(document.getElementById('mail').value)
-        setNum(document.getElementById('number').value)
+ 
 
         document.getElementById('result').innerHTML="Form submitted Please Check console"
 
@@ -45,31 +42,31 @@ function Welcome() {
             <div className='subdiv'>
                    <div>
                         <label>First Name</label><br/>
-                        <input id='fname' name='fname'  type="text" required></input>
+                        <input id='fname' onChange={(e)=>{setFname(e.target.value)}}  name='fname'  type="text" required></input>
                    </div>
                    <div>
                         <label>Last Name</label><br/>
-                        <input id='lname' type="text" required></input><br />
+                        <input id='lname'onChange={(e)=>{setLname(e.target.value)}} type="text" required></input><br />
                    </div>
             </div>
            <div className='subdiv'>
                   <div>
                         <label>Age</label><br/>
-                        <input id='age' type="Number" required></input>
+                        <input id='age' onChange={(e)=>{setAge(e.target.value)}} type="Number" required></input>
                   </div>
                    <div>
                         <label>DOB</label><br/>
-                        <input id='dob' type="date" required></input><br />
+                        <input id='dob'onChange={(e)=>{setDob(e.target.value)}} type="date" required></input><br />
                    </div>
            </div>
               <div className='subdiv'>
                   <div>
                         <label>mail</label><br/>
-                        <input id='mail' type="email" required></input>
+                        <input id='mail' onChange={(e)=>{setMail(e.target.value)}} type="email" required></input>
                   </div>
                  <div>
                         <label>Number</label><br/>
-                        <input id='number' type="Number" required></input><br />
+                        <input id='number' onChange={(e)=>{setNum(e.target.value)}} type="Number" required></input><br />
                   </div>
                  </div>
 
