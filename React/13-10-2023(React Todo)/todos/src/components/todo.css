@@ -1,0 +1,26 @@
+.regular{
+    display: flex;
+    justify-content: center;
+}
+
+.maindiv{
+    width: 80%;
+    height: 50vh;
+    background-color: rgba(203, 223, 223, 0.548);
+    text-align: center;
+    border-radius: 10px;
+   
+}
+
+.table-1{
+    width: 40%;
+    background-color: rgba(55, 172, 172, 0.39);
+   
+}
+.todo-lists{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  
+}

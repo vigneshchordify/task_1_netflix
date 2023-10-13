@@ -38,7 +38,7 @@ function App() {
 
 
   //validation
-  const { register, handleSubmit,reset, watch, formState: { errors } } = useForm({
+  const { register, handleSubmit, reset, watch, formState: { errors } } = useForm({
     resolver: yupResolver(schema)
   })
 
@@ -54,8 +54,6 @@ function App() {
 
 
     <div className="App">
-
-
 
       <form className='registerfrm' onSubmit={handleSubmit((data) => {
         setUserdata(data)
@@ -110,6 +108,7 @@ function App() {
           <label>Select State</label>
           <select {...register('state')}>
             <option value={''}>Select State</option>
+
             {
               states.map(state => {
                 return <option>{state}</option>
