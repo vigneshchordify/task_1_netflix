@@ -18,8 +18,8 @@ function App() {
     'Andra pradesh': ['Vishakapattanam', 'Guntur', 'Prakasam', 'Eluru'],
   }
 
-  const [selectstate, setSelectState] = useState('')
-  console.log(selectstate);
+  // const [selectstate, setSelectState] = useState('')
+  // console.log(selectstate);
 
 
   //implementing yup schema
@@ -38,11 +38,11 @@ function App() {
 
 
   //validation
-  const { register, handleSubmit,watch, formState: { errors } } = useForm({
+  const { register, handleSubmit,reset, watch, formState: { errors } } = useForm({
     resolver: yupResolver(schema)
   })
 
-const temp=watch("state")
+  const temp = watch("state")
 
 
 
@@ -55,10 +55,11 @@ const temp=watch("state")
 
     <div className="App">
 
-  
+
 
       <form className='registerfrm' onSubmit={handleSubmit((data) => {
         setUserdata(data)
+        reset()
         console.log(userdata);
 
       })} >
@@ -106,32 +107,32 @@ const temp=watch("state")
           </div>
         </div>
         <div>
-        <label>Select State</label>
-        <select {...register('state')}>
-        <option value={''}>Select State</option>
-          {
-            states.map(state => {
-              return <option>{state}</option>
-            })
-          }
+          <label>Select State</label>
+          <select {...register('state')}>
+            <option value={''}>Select State</option>
+            {
+              states.map(state => {
+                return <option>{state}</option>
+              })
+            }
 
-        </select>
-        <p className='errmsg'>{errors.state?.message}</p>
+          </select>
+          <p className='errmsg'>{errors.state?.message}</p>
 
-        <select {...register('district')}>
-         
-          {
-            temp?(
-             district[temp].map(i=>{
-              return <option>{i}</option>
-             })
-            ):null
-          }
+          <select {...register('district')}>
 
-        </select>
-        <p className='errmsg'>{errors.district?.message}</p>
+            {
+              temp ? (
+                district[temp].map(i => {
+                  return <option>{i}</option>
+                })
+              ) : null
+            }
 
-      </div>
+          </select>
+          <p className='errmsg'>{errors.district?.message}</p>
+
+        </div>
 
 
         <button type='submit'>Submit</button>
