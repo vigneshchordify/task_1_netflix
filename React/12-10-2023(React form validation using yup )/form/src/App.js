@@ -122,8 +122,8 @@ function App() {
 
             {
               temp ? (
-                district[temp].map(i => {
-                  return <option>{i}</option>
+                district[temp].map((i,index) => {
+                  return <option key={index}>{i}</option>
                 })
               ) : null
             }
