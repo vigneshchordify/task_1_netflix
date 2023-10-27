@@ -5,21 +5,25 @@ import { NavLink } from 'react-router-dom'
 
 function Movies() {
 
-  const {movie}=useContext(AppContext)
+  const { movie } = useContext(AppContext)
   return (
-    <div className='d-flex ' >
-      {movie.map((curMovie)=>{
-        const {imdbID,Title,poster}=curMovie
-        return <div className='w-25 d-flex bg-success'>
-          <NavLink to={`movie/${imdbID}`}>
-            <div>
-              <image src={poster}></image>
-              <h1>{Title}</h1>
+    <div className='d-flex  ' style={{display:"flex",justifyContent:"space-evenly",flexWrap:"wrap"}} >
+      {movie.map((curMovie) => {
+        const { imdbID, Title, Poster } = curMovie
+        return <div className='w-25 d-flex'>
+          <NavLink to={`movie/${imdbID}`} key={imdbID}>
+            <div class="card" style={{width:"16rem"}}>
+              <img src={Poster} class="card-img-top " alt="..."/>
+                <div class="card-body">
+                  <h5 class="card-title">{Title}</h5>
+                 
+                </div>
             </div>
+
           </NavLink>
-          
+
         </div>
-})
+      })
 
       }
     </div>

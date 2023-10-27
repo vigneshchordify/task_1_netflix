@@ -7,7 +7,12 @@ function Home() {
 
 
   return (
-    <div><Movies/>
+    <div className='text-center'>
+
+      <h1>Movie List</h1>
+      <h3 className='mb-5'>Click to single view</h3>
+      
+      <Movies/>
 
      
     </div>
