@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 
-const API_URL=`https://www.omdbapi.com/?apikey=a82bd60b&s=titanic`
+const API_URL=`https://www.omdbapi.com/?apikey=a82bd60b&s=avengers`
 
 
 const AppContext=createContext()
@@ -9,7 +9,7 @@ const AppContext=createContext()
 
 const AppProvider=({children})=>{
 
-    const [isLoading,SetIsLoading]=useState(true)
+   
     const [movie,SetMovie]=useState([])
     const [isError,setIsError]=useState({show:false,msg:""})
 
@@ -22,7 +22,7 @@ const AppProvider=({children})=>{
             console.log(data);
 
             if(data.Response==="True"){
-                SetIsLoading(false)
+           
                 SetMovie(data.Search)
             }
             else{
@@ -47,7 +47,7 @@ useEffect(()=>{
 
 },[])
 
-    return <AppContext.Provider value={{isError,isLoading,movie}}>{children}</AppContext.Provider>
+    return <AppContext.Provider value={{isError,movie}}>{children}</AppContext.Provider>
 };
 
 export {AppContext,AppProvider}
