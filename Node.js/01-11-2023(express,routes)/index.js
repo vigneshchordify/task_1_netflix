@@ -31,7 +31,27 @@ app.post("/post-method", function (req, res) {
 })
 
 app.put("/put-method", function (req, res) {
-    res.send("this is a put method")
+
+    const id=req.body.id
+
+    User.findById(id).then((userData)=>{
+
+        console.log(userData);
+
+        userData.name = req.body.Name
+        userData.age = req.body.age
+        userData.location = req.body.location
+
+        userData.save()
+    
+
+    }).catch((err)=>{
+        console.log(err);
+    })
+
+   
+    res.status(200).send(req.body)
+
 })
 
 
@@ -53,4 +73,17 @@ app.post("/data-share", function (req, res) {
         console.log(err);
     })
 
+})
+
+app.delete("/data-delete",function(req,res){
+    const id=req.body.id
+
+    User.deleteOne(id).then((deleted_data)=>{
+
+        console.log("deleted data",deleted_data);
+    }).catch((err)=>{
+        console.log(err);
+    })
+    res.send("success")
+    
 })
