@@ -15,7 +15,7 @@ app.post("/upload_files", upload.array("files"), ((req, res) => {
 
     console.log(req.body);
     console.log(req.files);
-    res.send("image successfullt updated")
+    res.send("image successfully updated")
 
 
 }));
