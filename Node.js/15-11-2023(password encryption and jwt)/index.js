@@ -3,6 +3,8 @@ const mongoose = require("mongoose")
 const bodyparser = require("body-parser")
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken')
+
+
 const jwtSecret = '32716b297df0651e2867c59195e1c07a983e68642abfbdb6fa16892bb453cda91e3b1c'
 
 
@@ -121,6 +123,28 @@ app.post('/loginapi', async (req, res) => {
     }
 });
 
+const authentication=async(req,res,next)=>{
+    const token=req.body.token
+    try{
+        const decodedToken = jwt.verify(token, jwtSecret);
+        const userData = await User.findById(decodedToken.id)
+        if (!userData) {
+            res.status(404).json({ message: "User not found" });
+          } else {
+            res.status(200).json({ message: "Verification successful", user: userData });
+            next()
+          }
+          
+    }
+    catch (error) {
+        res.status(401).json({ message: "Token is invalid or expired" });
+      }
+
+}
+
+app.post("verify",authentication,(req,res)=>{
+    
+})
 
 
 
