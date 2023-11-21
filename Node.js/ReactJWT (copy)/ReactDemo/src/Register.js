@@ -47,11 +47,17 @@ function Register() {
           console.log(data);
           const body=data
  
-         const registerresponse= await instance.post('/register',body);
+         try{
+          const registerresponse= await instance.post('/register',body);
          alert(registerresponse.data.message);
          navigate('login')
          
           reset()
+         }catch(error){
+          alert(error.response.data)
+          console.log(error.response.data);
+
+         }
   
         })}  >
           <div className="formback">

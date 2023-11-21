@@ -4,6 +4,8 @@ const bodyParser = require('body-parser')
 
 const cors = require('cors')
 
+require('./model/index')
+
 
 
 
@@ -17,8 +19,7 @@ app.use(express.json())
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }))
 
-mongoose.connect('mongodb://127.0.0.1:27017/task6').then(console.log("The database is connected")).catch(
-    (err) => { console.log('error  ', err); })
+
 
 
 
