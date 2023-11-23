@@ -59,6 +59,7 @@ const registerlogic = async (req, res) => {
                 user.Email = Email
                 user.Password = hash
                 user.Role = Role
+                user.file=req.file.path
 
                 await user.save()
             })
